@@ -1,0 +1,9 @@
+resources:
+- deployment.yaml
+- service.yaml
+# - base/charts/serviceaccount.yaml -> can include even folders referencing too here. !
+
+#namePrefix: base-   --> Otherwise this will be applied to all Dependent Enviroments' kustomization.yaml files. Called as "Encapsulation/Hydrating"
+
+commonLabels:
+  owner: siva

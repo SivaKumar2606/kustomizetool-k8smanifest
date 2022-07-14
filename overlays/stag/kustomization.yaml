@@ -1,0 +1,18 @@
+bases:
+- ../../base
+
+namePrefix: stag-
+
+commonLabels:
+  location: westus
+
+commonAnnotations:
+  machine-class: FS1_v3_superfast
+
+images:
+- name: nginx
+  newName: sivakumar2606/multibranchpipemaster
+  newTag: v1
+
+patches:
+- patches/stag-replica-count.yaml

@@ -1,0 +1,18 @@
+bases:
+- ../../base/
+
+namePrefix: dev-
+
+commonLabels:
+  location: eastus
+
+commonAnnotations:
+  machine-class: DS1_v2
+
+images:
+- name: nginx
+  newName: sivakumar2606/multibranchpipedev
+  newTag: v1
+
+patches:
+- patches/dev-replica-count.yaml

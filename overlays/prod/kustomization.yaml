@@ -1,0 +1,18 @@
+bases:
+- ../../base/
+
+namePrefix: prod-
+
+commonLabels:
+  location: southindia
+
+commonAnnotations:
+  machine-class: FS1_v3_superfast
+
+images:
+- name: nginx
+  newName: sivakumar2606/multibranchpipeprod
+  newTag: v1
+
+patches:
+- patches/prod-replica-count.yaml
